@@ -1,4 +1,4 @@
-public interface BaseFactory {
-    Circle getCircle(double radius);
-    Triangle getTriangle(double a, double b, double c);
+public abstract class BaseFactory {
+    public abstract Circle createCircle(double radius);
+    public abstract Triangle createTriangle(double a, double b, double c);
 }
