@@ -1,4 +1,4 @@
-public class BlackFactory implements BaseFactory {
+public class BlackFactory extends BaseFactory {
     private BaseFactory baseFactory;
     private static final String COLOR = "black";
 
