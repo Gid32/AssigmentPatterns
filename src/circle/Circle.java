@@ -7,7 +7,7 @@ public abstract class Circle {
     protected double radius;
     protected String color;
 
-    public Circle(int radius, String color) {
+    public Circle(double radius, String color) {
         this.radius = radius;
         this.color = color;
     }
@@ -16,7 +16,7 @@ public abstract class Circle {
         return radius;
     }
 
-    public void setRadius(int radius) {
+    public void setRadius(double radius) {
         this.radius = radius;
     }
 
@@ -44,8 +44,10 @@ public abstract class Circle {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
+
         Circle circle = (Circle) o;
-        if (radius != circle.radius) return false;
+
+        if (Double.compare(circle.radius, radius) != 0) return false;
         return color != null ? color.equals(circle.color) : circle.color == null;
 
     }

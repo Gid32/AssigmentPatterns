@@ -5,7 +5,7 @@ package circle;
  */
 public class WhiteCircle extends Circle {
 
-    public WhiteCircle(int radius) throws Exception {
+    public WhiteCircle(double radius) throws Exception {
         super(radius, "white");
     }
 
