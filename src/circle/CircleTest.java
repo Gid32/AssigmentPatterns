@@ -1,4 +1,4 @@
-package Circle;
+package circle;
 
 /**
  * Created by dmytro-mikhieiev on 08.05.2018.

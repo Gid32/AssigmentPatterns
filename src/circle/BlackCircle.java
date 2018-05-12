@@ -1,11 +1,11 @@
-package Circle;
+package circle;
 
 /**
  * Created by dmytro-mikhieiev on 08.05.2018.
  */
 public class BlackCircle extends Circle {
 
-    public BlackCircle(int radius) throws Exception {
+    public BlackCircle(double radius) throws Exception {
         super(radius, "black");
     }
 
